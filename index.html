@@ -27,7 +27,7 @@
 	    <input type = "radio" name = "gender_field" value = "Female"><label>Female</label>
 	  </div>
 	  <div>
-	    <label>Age:</label>
+	    <br><label>Age:</label>
 		<input type = "radio" name = "age_field" value = "under 18" checked = "checked"><label>Under 18</label><br>
         <input type = "radio" name = "age_field" value = "18-24"><label>18-24</label><br>
 	    <input type = "radio" name = "age_field" value = "25-34"><label>25-34</label><br>
@@ -37,6 +37,20 @@
 	    <input type = "radio" name = "age_field" value = "over 60"><label>Over 65</label>
 	  </div>
     </fieldset>
+	<fieldset>
+	  <legend>My Availability</legend>
+	  <div>
+	    <label>Days Available:</label><br>
+	    <input type = "checkbox" name = available_field[] value = "Monday"><label>Monday </label><br>
+	    <input type = "checkbox" name = available_field[] value = "Tuesday"><label>Tuesday</label><br>
+	    <input type = "checkbox" name = available_field[] value = "Wednesday"><label>Wednesday</label><br>
+	    <input type = "checkbox" name = available_field[] value = "Thursday"><label>Thursday</label><br>
+	    <input type = "checkbox" name = available_field[] value = "Friday"><label>Friday</label><br>
+	    <input type = "checkbox" name = available_field[] value = "Saturday"><label>Saturday</label><br>
+	    <input type = "checkbox" name = available_field[] value = "Sunday"><label>Sunday</label><br>
+	  </div>
+	  <label>Any Comments?<input = "textarea" name = "comment_field" placeholder = "Write comments here" <label>
+	</fieldset>
   </form>
 </body>
 </html>
