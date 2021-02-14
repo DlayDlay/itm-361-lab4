@@ -5,20 +5,38 @@
   <title>ITMD 361 Lab 4</title>
 </head>
 <body>
-  <h1>Volunteer Form</h1>
-  <fieldset>
-  <h2>My Info</h2>
-    <div>
-      <label>First Name: <input type = "text" name = "fname_field" placeholder = "First name"></label>
-	  <label>Last Name: <input type = "text" name = "lname_field" placeholder = "Last name"></label>
-	  <label>Phone Number: <input type = "text" name = "phone_field" placeholder = "Phone number"></label>
-	  <label> Email Address: <input type = "text" name = "email_field" placeholder = "Email address"></label>
-	</div>
-	<div>
-	  <label>Gender: </label>
-	  <input type = "radio" name = "gender_field" value = "Male"><label>Male</label>
-	  <input type = "radio" name = "gender_field" value = "Female"><label>Female</label>
-	</div>
-  </fieldset>
+  <form method = "post" action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+    <h1>Volunteer Form</h1>
+    <fieldset>
+      <legend><strong>My Info</strong></legend>
+      <div>
+        <label>First Name: <input type = "text" name = "first_name_field" placeholder = "First name"></label>
+	  </div>
+	  <div>
+	    <label>Last Name: <input type = "text" name = "last_name_field" placeholder = "Last name"></label>
+	  </div>
+	  <div>
+	    <label>Phone Number: <input type = "text" name = "phone_field" placeholder = "Phone number"></label>
+	  </div>
+	  <div>
+	    <label> Email Address: <input type = "text" name = "email_field" placeholder = "Email address"></label>
+	  </div>
+	  <div>
+	    <label>Gender: </label>
+	    <input type = "radio" name = "gender_field" value = "Male" checked = "checked"><label>Male</label>
+	    <input type = "radio" name = "gender_field" value = "Female"><label>Female</label>
+	  </div>
+	  <div>
+	    <label>Age:</label>
+		<input type = "radio" name = "age_field" value = "under 18" checked = "checked"><label>Under 18</label><br>
+        <input type = "radio" name = "age_field" value = "18-24"><label>18-24</label><br>
+	    <input type = "radio" name = "age_field" value = "25-34"><label>25-34</label><br>
+	    <input type = "radio" name = "age_field" value = "35-44"><label>35-44</label><br>
+	    <input type = "radio" name = "age_field" value = "45-54"><label>45-54</label><br>
+	    <input type = "radio" name = "age_field" value = "55-64"><label>55-64</label><br>
+	    <input type = "radio" name = "age_field" value = "over 60"><label>Over 65</label>
+	  </div>
+    </fieldset>
+  </form>
 </body>
 </html>
